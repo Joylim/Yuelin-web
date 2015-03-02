@@ -1,0 +1,17 @@
+此网站使用node.js的express框架，使用ejs模板引擎，界面可使用polymer编写。
+express框架简介：
+app.js	启动的主程序
+node_modules/	局部的node.js包安装路径，使用npm安装的包会放在此路径下，使用npm update安装本地没有的依赖包
+bin/	使用npm全局安装supervisor，使用supervisor bin/www 运行网站，浏览路径localhost:3000
+routes/	路由文件路径
+views/	界面文件路径
+package.json	express的node.js包依赖管理，node.js的包，即node_modules路径不要添加到git
+bower.json	bower安装的js包依赖管理，bower安装的包即bower_components路径添加到git
+
+ejs简介：
+基本与html无差别，可当成html来写
+
+views/说明：
+界面编写使用bower管理js库，bower安装的js库放在views/bower_components路径下，需根据路径引用相应的js库
+polymer支持自己写html的tag，自己写的tag放在views/components路径下
+polymer有两种类型的控件，core-*和paper-*，core实现简单核心功能，paper是在core基础上增加了扁平化的设计，一般使用paper控件，但是有些功能还是需要借助core控件
