@@ -1,0 +1,48 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+
+<polymer-element name="site-signinup">
+
+  <template>
+    <style>
+     paper-button {
+       background: #FFF9C4;
+       color: gray;
+       margin: 0;
+     }
+
+     #topbar {
+       margin-bottom: 20px;
+     }
+     .yellowblock {
+       background: #FFF9C4;
+     }
+
+     span {
+       margin-right: 10px;
+     }
+
+    </style>
+    <div flex vertical layout center-justified>
+      <div vertical layout>
+        <div horizontal layout id="topbar">
+          <paper-button flex five id="signup">
+            <span>SIGNUP</span>
+            注册
+          </paper-button>
+          <div flex one class="whiteblock"> </div>
+        </div>
+        <div horizontal layout>
+          <div flex one class="whiteblock"> </div>
+          <paper-button flex five id="signin">
+            <span>SIGNIN</span>
+            登陆
+          </paper-button>
+        </div>
+      </div>
+    </div>
+  </template>
+  <script>
+   Polymer({});
+  </script>
+</polymer-element>
