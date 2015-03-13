@@ -1,0 +1,99 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/core-toolbar/core-toolbar.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../components/bower_components/paper-toggle-button/paper-toggle-button.html">
+
+<polymer-element name="site-me4">
+	<template>
+		<style>
+			#space1 {
+				background-color: #F7F9F8;
+				height: 30px;
+			}
+			.id1 {
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			.class1 {
+				margin-top: 10px;
+				margin-left: 20px;
+			}
+			#on {
+				margin-top: 5px;
+				margin-right: 20px;
+			}
+			.info {
+				background-color: #F7F9F8;
+			}
+			.info2 {
+				font-size: 12px;
+				margin-left: 20px;
+				margin-right: 30px;
+			}
+			#bt1 {
+				margin-right: 20px;
+			}
+			.end {
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			.voice {
+				margin-top: 10px;
+				margin-left: 20px;
+			}
+			.bt2 {
+				margin-right: 20px;
+			}
+			.space2 {
+				background-color: #F7F9F8;
+				height: 3px;
+			}
+			#rest {
+				background-color: #F7F9F8;
+				height: 260px;
+			}
+		</style>
+
+		<core-toolbar>
+			<paper-icon-button icon="arrow-back"></paper-icon-button>
+			<div horizontal layout center-justified flex>
+          		<span >新消息通知</span>
+        	</div>
+		</core-toolbar>
+		<div vertical layout>
+			<div id="space1"></div>
+			<div horizontal layout class="id1">
+				<div class="class1" flex>接受新消息通知</div>
+				<div id="on">已开启</div>
+			</div>
+			<div class="info">
+				<p class="info2">如果你要关闭或开启悦邻新消息通知，请在手机的“设置”
+					功能中，找到应用程序“悦邻”更改。</p>
+			</div>
+			<div horizontal layout class="id1">
+				<p class="class1" flex>功能消息免打扰</p>
+				<div>
+					<paper-icon-button icon="chevron-right" id="bt1"></paper-icon-button>
+				</div>
+			</div>
+			<div class="info">
+				<p class="info2">设置系统功能消息提示声音和震动的时段</p>
+			</div>
+			<div horizontal layout class="end">
+				<div flex class="voice">声音</div>
+				<paper-toggle-button class="bt2"></paper-toggle-button>
+			</div>
+			<div class="space2"></div>
+			<div horizontal layout class="end">
+				<div flex class="voice">震动</div>
+				<paper-toggle-button class="bt2"></paper-toggle-button>
+			</div>
+			<div id="rest">
+			</div>
+		</div>
+	</template>
+	<script>
+		Polymer({});
+	</script>
+</polymer-element>

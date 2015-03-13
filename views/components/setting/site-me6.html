@@ -1,0 +1,167 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/core-toolbar/core-toolbar.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../components/bower_components/paper-toggle-button/paper-toggle-button.html">
+
+<polymer-element name="site-me6">
+	<template>
+		<style>
+			#header {
+				margin-bottom: 20px;
+			}
+			#sig {
+				margin-top: 10px;
+				margin-bottom: 20px;
+			}
+			.tag {
+				margin-right: 20px;
+			}
+			paper-button[raised].color1{
+				width: 40px;
+				background-color: #C6D3D6;
+				color: #fff;
+			}
+			.tag1 {
+				font-size: 12px;
+			}
+			paper-button[raised].color2{
+				width: 40px;
+				background-color: #537E82;
+				color: #fff;
+			}
+			paper-button[raised].color3{
+				width: 40px;
+				background-color: #9FAD8E;
+				color: #fff;
+			}
+			.spaceMax {
+				background-color: #F7F9F8;
+				height: 10px;
+			}
+			.spaceMin {
+				background-color: #F7F9F8;
+				height: 3px;
+			}
+			#signature {
+				margin-bottom: 10px;
+			}
+			img {
+				height: 50px;
+				width: 50px;
+			}
+			#myphoto {
+				margin-top: 10px;
+				margin-bottom: 15px;
+			}
+			#yuelin {
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+			#address {
+				margin-top: 15px;
+				margin-bottom: 20px;
+			}
+			#settings {
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			.left1 {
+				margin-left: 20px;
+				margin-top: 10px;
+			}
+			.left2 {
+				margin-left: 10px;
+			}
+			#myphoto div img {
+				margin-right: 5px;
+			}
+			#address img {
+				margin-left: 40px;
+			}
+			.s1 {
+				font-size: 12px;
+				margin-top: 12px;
+				margin-left: 20px;
+			}
+			#header div img {
+				height: 60px;
+				width: 60px;
+				margin-bottom: 10px;
+			}
+			#header div p{
+				font-size: 12px;
+			}
+			.me {
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			#header div span {
+				font-size: 20px;
+			}
+
+
+
+		</style>
+		<div vertical layout flex>
+			<div vertical layout id="header">
+				<div horizontal layout center-justified class="me">
+					<span>我</span>
+				</div>
+				<div horizontal layout center-justified>
+					<img src="#"></img>
+				</div>
+				<div horizontal layout center-justified class="name">
+					<div >用户名</div>
+				</div>
+				<div horizontal layout center-justified>
+					<p>男 21岁 北京 海淀</p
+				</div>
+			</div>
+			<div class="spaceMax"></div>
+			<div vertical layout id="signature">
+				<div horizontal layout id="sig">
+					<div class="left1">个人签名:</div>
+					<div class="s1">哈哈哈哈哈hello world</div>
+				</div>
+				<div horizontal layout end-justified>
+					<paper-button raised class="tag tag1 color1">屌丝</paper-button>
+					<paper-button raised class="tag tag1 color2">土豪</paper-button>
+					<paper-button raised class="tag tag1 color3">任性</papper-button>
+				</div>
+			</div>
+			<div class="spaceMax"></div>
+			<div horizontal layout id="myphoto">
+				<div class="left1">我的照片：</div>
+				<div horizontal layout class="left2">
+					<img src="#"></img>
+					<img src="#"></img>
+					<img src="#"></img>
+					<img src="#"></img>
+				</div>
+			</div>
+			<div class="spaceMin"></div>
+			<div horizontal layout id="yuelin">
+				<div class="left1">悦邻达人：</div>
+				<div class="s1"> 990   悦券</div>
+			</div>
+			<div class="spaceMax"></div>
+			<div horizontal layout id="address">
+				<div class="left1">所在小区</div>
+				<img src="#"></img>
+			</div>
+			<div class="spaceMin"></div>
+			<div horizontal layout id="settings">
+				<div flex class="left1">我的设置</div>
+				<paper-icon-button icon="chevron-right">
+				</paper-icon-button>
+			</div>
+			<div class="spaceMax"></div>
+			<div horizontal layout id="footer">
+			</div>
+		</div>
+	</template>
+	<script>
+		Polymer({});
+	</script>
+</polymer-element>

@@ -1,0 +1,159 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/core-toolbar/core-toolbar.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../components/bower_components/paper-toggle-button/paper-toggle-button.html">
+
+<polymer-element name="site-user2">
+	<template>
+		<style>
+			#info {
+				background-color: #F8EFDA;
+				height: 160px;
+			}
+			.space1 {
+				background-color: #F7F9F8;
+				height: 15px;
+			}
+			#signature {
+				height: 60px;
+			}
+			#myphoto {
+				height: 60px;
+			}
+			#yuelin {
+				height: 35px;
+			}
+			#address {
+				height: 60px;
+			}
+			.space2 {
+				background-color: #F7F9F8;
+				height: 30px;
+			}
+			.space3 {
+				background-color: #F7F9F8;
+				height: 3px;
+			}
+			img {
+				height: 50px;
+				width: 50px;
+			}
+			.left1 {
+				margin-top: 15px;
+				margin-left: 20px;
+			}
+			.w1 {
+				font-size: 12px;
+			}
+			paper-button[raised].color1{
+				width: 50px;
+				background-color: #FDA5B9;
+				color: #fff;
+			}
+			paper-button[raised].color2{
+				width: 50px;
+				background-color: #507B7D;
+				color: #fff;
+			}
+			paper-button[raised].color3{
+				width: 50px;
+				background-color: #D5DFE5;
+				color: #fff;
+			}
+			.right {
+				margin-right: 20px;
+				margin-bottom: 10px;
+			}
+			.left2 {
+				margin-left: 20px;
+			}
+			#myphoto div img {
+				margin-right: 5px;
+			}
+			.top1 {
+				margin-top: 10px;
+			}
+			#friend {
+				margin-top: 15px;
+			}
+			#info div {
+				margin-top: 30px; 
+				margin-bottom: 15px;
+			}
+			#skm {
+				background-color: #F7F9F8;
+				height: 20px;
+			}
+			.w2 {
+				font-size: 12px;
+				margin-right: 10px;
+				margin-top: 5px;
+			}
+			core-toolbar {
+				background-color: #ffffff;
+			}
+		</style>
+
+		<core-toolbar>
+			<paper-icon-button icon="arrow-back"></paper-icon-button>
+			<div horizontal layout center-justified flex>
+          		<span >用户名</span>
+        	</div>
+		</core-toolbar>
+		
+		<div vertical layout>
+			<div horizontal layout center-justified id="info">
+				<div vertical layout>
+					<img src="#"></img>
+					<div class="w1 af">个人姓名</div>
+					<paper-button raised class="color1">女  20</paper-button>
+				</div>	
+			</div>	
+			<div horizontal layout end-justified id="skm">
+				<div id="time" class="w2">2分钟前</div>
+				<div id="addr" class="w2">1.6km</div>
+			</div>
+			<div vertical layout id="signature" class="left1">
+				<div horizontal layout flex>
+					<div class="w1">个人签名:</div>
+					<div class="w1 left2">哈哈哈哈哈hello world</div>
+				</div>
+				<div horizontal layout end-justified>
+					<paper-button raised class="color1 right">萝莉</paper-button>
+					<paper-button raised class="color2 right">吃饭</paper-button>
+					<paper-button raised class="color3 right">90后</papper-button>
+				</div>
+			</div>
+			<div class="space1"></div>
+			<div horizontal layout id="myphoto" class="left1">
+				<div class="w1 top1">他的照片：</div>
+				<div horizontal layout class="left2">
+					<img src="#"></img>
+					<img src="#"></img>
+					<img src="#"></img>
+					<img src="#"></img>
+					<img src="#"></img>
+				</div>
+			</div>
+			<div class="space1"></div>
+			<div horizontal layout id="yuelin" class="left1">
+				<div class="w1">悦邻达人：</div>
+				<div class="w1 left2"> 990   悦券</div>
+			</div>
+			<div class="space3"></div>
+			<div horizontal layout id="address" class="left1">
+				<div class="w1 top1">所在小区:</div>
+				<img class="left2" src="#"></img>
+			</div>
+			<div class="space2"></div>
+			<div horizontal layout center-justified>
+				<paper-button id="friend">对话</paper-button>
+			</div>
+		</div>
+
+	</template>
+	<script>
+		Polymer({});
+	</script>
+</polymer-element>

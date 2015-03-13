@@ -1,0 +1,64 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/core-toolbar/core-toolbar.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../components/bower_components/paper-toggle-button/paper-toggle-button.html">
+
+<polymer-element name="site-me3">
+	<template>
+		<style>
+		#space1 {
+			background-color: #F7F9F8;
+			height: 30px;
+		}
+		.on-off {
+			margin-top: 10px;
+			margin-left: 20px;
+			margin-bottom: 10px;
+		}
+		.space2 {
+			background-color: #F7F9F8;
+			height: 3px;
+		}
+		#space3 {
+			background-color: #F7F9F8;
+			height: 430px;
+		}
+		#info {
+			font-size: 12px;
+			margin-left: 30px;
+			margin-right: 30px;
+		}
+		</style>
+		<core-toolbar>
+			<paper-icon-button icon="arrow-back"></paper-icon-button>
+			<div horizontal layout center-justified flex>
+          		<span >功能消息免打扰</span>
+        	</div>
+		</core-toolbar>
+		
+		<div id="space1"></div>
+
+		<div center horizontal layout class="on-off">
+      		<div flex>开启</div>
+      		<paper-toggle-button class="fun"></paper-toggle-button>
+   		</div>
+		<div class="space2"></div>
+
+   		<div center horizontal layout class="on-off">
+      		<div flex>只在夜间开启</div>
+   		</div>
+   		<div class="space2"></div>
+   		<div center horizontal layout class="on-off">
+      		<div flex>关闭</div>
+   		</div>
+	
+		<div id="space3" flex>
+			<p id="info">开启后,"悦邻"在收到消息后，手机不会震动与发出提示音。如果没有
+				设置为“只在夜间开启”，则只在22:00到8:00间有效。</p>		
+		</div>
+	</template>
+	<script>
+		Polymer({});
+	</script>
+</polymer-element>

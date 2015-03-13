@@ -1,0 +1,66 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/core-toolbar/core-toolbar.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../components/bower_components/paper-toggle-button/paper-toggle-button.html">
+
+<polymer-element name="site-me5">
+	<template>
+		<style>
+			#space1 {
+				background-color: #F7F9F8;
+				height: 30px;
+			}
+			#space2 {
+				background-color: #F7F9F8;
+				height: 20px;
+			}
+			#space3 {
+				background-color: #F7F9F8;
+				height: 3px;
+			}
+			#space4 {
+				background-color: #F7F9F8;
+			}
+			.info {
+				margin-left: 20px;
+			}
+			.info2 {
+				margin-left: 20px;
+				margin-top: 10px;
+			}
+			.right1 {
+				margin-right: 20px;
+			}
+		</style>
+		<core-toolbar>
+			<paper-icon-button icon="arrow-back"></paper-icon-button>
+			<div horizontal layout center-justified flex>
+          		<span >我的设置</span>
+        	</div>
+		</core-toolbar>
+
+		<div vertical layout>
+			<div id="space1"></div>
+			<div horizontal layout id="id1">
+				<p flex class="info">新消息通知</p>
+				<paper-icon-button icon="chevron-right" class="right1"></paper-icon-button>
+			</div>
+			<div id="space2"></div>
+			<div horizontal layout id="id2">
+				<p flex class="info">关于悦邻</p>
+				<paper-icon-button icon="chevron-right" class="right1"></paper-icon-button>
+			</div>
+			<div id="space3"></div>
+			<div horizontal layout id="exit">
+				<paper-button class="info2">退出登录</paper-button>
+			</div>
+			<div id="space4"></div>
+			
+		</div>
+
+	</template>
+	<script>
+		Polymer({});
+	</script>
+</polymer-element>
